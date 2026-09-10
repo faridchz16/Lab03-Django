@@ -5,8 +5,8 @@ Plataforma web desarrollada en **Django y Bootstrap 5** orientada a la gestión 
 ---
 
 ## 👥 Integrantes del Equipo
-* **Farid Chavez Campos** - Desarrollo Backend, Modelos y Base de Datos
-* **Jordan Abad Mejia** - Desarrollo Frontend, Formularios y Vistas
+* **Farid Chavez Campos** 
+* **Jordan Abad Mejia** 
 
 ---
 
@@ -75,6 +75,25 @@ Una vez iniciado el servidor con `python manage.py runserver`, puedes acceder a 
 
 * **Panel de Administración de Django:**
   [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
+  ## 🤖 Agentes y Módulos de Responsabilidad del Proyecto
+
+Siguiendo el principio arquitectónico de **una aplicación por responsabilidad**, el sistema se encuentra estructurado en los siguientes agentes o módulos funcionales:
+
+* **1. Agente de Modelos y Datos (Backend / ORM):**
+  * *Responsabilidad:* Gestiona la persistencia y el esquema relacional de la base de datos a través de los modelos `Exam`, `Question` y `Choice`, aplicando clases `Meta`, llaves foráneas con eliminación en cascada y migraciones versionadas.
+
+* **2. Agente de Formularios y Validación (Forms & Formsets):**
+  * *Responsabilidad:* Se encarga de la captura y validación de los datos ingresados por el usuario mediante `ModelForms` y `inlineformset_factory`, asegurando reglas de negocio estrictas (como validar exactamente una respuesta correcta por pregunta).
+
+* **3. Agente de Controladores y Vistas (Views & URLs):**
+  * *Responsabilidad:* Coordina el flujo de la aplicación procesando solicitudes HTTP, aplicando lógica de redirección, control de mensajes de notificación (flashes) y el enrutamiento jerárquico del sistema.
+
+* **4. Agente de Interfaz y Experiencia de Usuario (Frontend / UX):**
+  * *Responsabilidad:* Renderiza la capa visual y responsiva utilizando plantillas HTML heredadas, Bootstrap 5 y componentes estéticos modernos orientados al entorno académico en español.
+
+* **5. Agente de Administración y Control (Admin & DevOps):**
+  * *Responsabilidad:* Administra el panel de control de Django (`admin.py`) con vistas anidadas y supervisa el control de versiones del código mediante commits progresivos y estructurados en GitHub.
 
 ## 📂 Estructura del Proyecto
 
