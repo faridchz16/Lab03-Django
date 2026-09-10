@@ -57,6 +57,25 @@ El presente laboratorio se ha desarrollado aplicando una metodología de ingenie
 ### 4. Panel de Administración de Django
 ![Panel de Administración](src/screenshots/admin.jpeg)
 
+## 🌐 Rutas y Enlaces de la Aplicación (Localhost)
+
+Una vez iniciado el servidor con `python manage.py runserver`, puedes acceder a las siguientes rutas:
+
+* **Página Principal (Listado de Exámenes):**
+  [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+* **Crear Nuevo Examen:**
+  [http://127.0.0.1:8000/exam/new/](http://127.0.0.1:8000/exam/new/)
+
+* **Detalle del Examen (Preguntas y Opciones):**
+  [http://127.0.0.1:8000/exam/1/](http://127.0.0.1:8000/exam/1/)
+
+* **Agregar Pregunta con Formset de Opciones:**
+  [http://127.0.0.1:8000/exam/1/question/new/](http://127.0.0.1:8000/exam/1/question/new/)
+
+* **Panel de Administración de Django:**
+  [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
 ## 📂 Estructura del Proyecto
 
 ```text
